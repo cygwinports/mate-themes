@@ -1,0 +1,18 @@
+inherit mate
+
+NAME="mate-themes"
+VERSION=1.4.0
+RELEASE=1
+CATEGORY="MATE"
+SUMMARY="MATE desktop menus"
+DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."
+REQUIRES="gnome-themes-standard gtk2.0-engines gtk2.0-engines-murrine gtk2.0-engines-pixmap mate-icon-theme"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	# needed only for intltool
+	rm -fr ${D}/usr/share/locale/
+}
