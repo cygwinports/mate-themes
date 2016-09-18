@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="mate-themes"
-VERSION=3.18.1
+VERSION=3.18.3
 RELEASE=1
 CATEGORY="MATE"
 SUMMARY="MATE desktop themes"
